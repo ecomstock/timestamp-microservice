@@ -5,9 +5,13 @@ const app = express()
 //app.use(express.static('static'))
 app.set('view engine', 'pug')
 
+app.get('/', (req, res) => {
+	res.render('index')
+})
+
 const port = process.env.PORT || 3000
 const host = 'localhost'
-const server = http.createServer(app)
-server.listen(port, host, () => {
+
+app.listen(port, host, () => {
 	console.log(`Server listening at port ${port}`)
 })
