@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ecomstock/timestamp-microservice/issues"
   },
-  "homepage": "https://github.com/ecomstock/timestamp-microservice#readme"
+  "homepage": "https://github.com/ecomstock/timestamp-microservice#readme",
+  "dependencies": {
+    "pug": "^2.0.0-rc.4"
+  }
 }
